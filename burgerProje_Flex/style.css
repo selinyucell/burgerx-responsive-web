@@ -1,0 +1,171 @@
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0px;
+    background-color: rgb(249, 249, 249);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.HeaderDiv {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 245, 232);
+    padding: 0px 10px;
+}
+
+.LogoDiv img {
+    width: 50px;
+    margin-left: 30px;
+}
+
+.cizgiler {
+    display: none;
+    margin-right: 30px;
+}
+
+.cizgiler p {
+    margin: 2px;
+    width: 30px;
+    height: 3px;
+    border-radius: 8px;
+    background-color: rgb(189, 101, 0);
+    z-index: 6;
+}
+
+.cizgiler:hover {
+    cursor: pointer;
+}
+
+.AboutDiv a {
+    text-decoration: none;
+    color: rgb(189, 101, 0);
+    padding: 5px 30px;
+}
+
+.AboutDiv a:hover {
+    border: 1px solid rgb(189, 101, 0);
+    border-radius: 4px;
+}
+
+.backgroundFoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('burgerfotolar/2.png');
+    height: 200px;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.burgerMenu {
+    color: rgb(189, 101, 0);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+.burgersMainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.burgerResDiv {
+    flex: 25%;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    border: 1px dashed grey;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.burger h3 {
+    color: rgb(189, 101, 0);
+}
+
+.burger img {
+    width: 60%;
+}
+
+.burger p,
+h3 {
+    margin: 8px;
+}
+
+.order {
+    font-size: 14px;
+    color: white;
+    background-color: rgb(43, 112, 33);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.order:hover {
+    background-color: rgb(189, 101, 0);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .burgerResDiv {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .burgerResDiv {
+        flex: 100%;
+    }
+
+    .AboutDiv a {
+        display: none;
+    }
+
+    .cizgiler {
+        display: block;
+        z-index: 2;
+    }
+}
+
+.acilanMenu {
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -145px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 245, 232);
+    z-index: 1;
+    padding: 20px;
+    transition: transform 0.5s;
+}
+
+.acilanMenu a {
+    text-decoration: none;
+    color: rgb(189, 101, 0);
+    border-radius: 2px;
+    margin: 30px 0px;
+    padding: 5px 10px;
+}
+
+.acilanMenu a:hover {
+    border: 1px solid rgb(189, 101, 0);
+}
+
+.menuAc {
+    transform: translateX(-145px);
+}
